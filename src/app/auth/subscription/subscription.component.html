@@ -1,0 +1,16 @@
+<div class="subscription-container">
+  <h2>Simple pricing for all your needs</h2>
+  <div class="plans">
+    <div class="plan"
+         *ngFor="let p of plans"
+          [class.highlighted]="p.highlighted">
+      <h3>{{ p.name }}</h3>
+
+      <p class="price">{{ p.price }}</p>
+      <ul class="features">
+        <li *ngFor="let f of p.features"> - {{ f }}</li>
+      </ul>
+      <button (click)="subscribe(p)">Get started</button>
+    </div>
+  </div>
+</div>

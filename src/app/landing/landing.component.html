@@ -1,0 +1,63 @@
+<nav class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1 contenteditable="true">Aura Fitness</h1>
+      <p class="lead" contenteditable="true">Train harder. Get stronger. Transform your life.</p>
+      <a class="cta" routerLink="/signin">Join Now</a>
+    </div>
+  </div>
+</nav>
+
+<section class="features container">
+  <h2>Why choose Aura Fitness</h2>
+  <div class="grid">
+    <div class="card">Modern equipment</div>
+    <div class="card">Certified trainers</div>
+    <div class="card">Flexible schedules</div>
+  </div>
+</section>
+
+<section class="trainers container">
+  <h2>Meet our trainers</h2>
+  <div class="grid trainers-grid">
+    <div class="trainer">Toms — Strength</div>
+    <div class="trainer">Mary — Yoga</div>
+    <div class="trainer">Sam — Cardio</div>
+  </div>
+</section>
+
+<section class="pricing container">
+  <h2>Pricing</h2>
+  <div class="grid trainers-grid">
+    <div class="trainer">Monthly — $29</div>
+    <div class="trainer">3 Months — $79</div>
+    <div class="trainer">Annual — $249</div>
+  </div>
+</section>
+
+<section id="contact" class="contact container">
+  <h2>Contact</h2>
+  <div class="card contact-card">
+    <p>Sign up or ask a question we'll get back to you.</p>
+    <p>
+      <a routerLink="/signin">Already a member? Sign in</a>
+    </p>
+    <form class="contact-form" (submit)="false">
+      <input type="text" placeholder="Your name" />
+      <input type="email" placeholder="Email" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p>Aura Fitness. All rights reserved. Thanks for stopping by keep crushing it and check back soon for
+      more inspiration!</p>
+    <nav class="footer-nav">
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
